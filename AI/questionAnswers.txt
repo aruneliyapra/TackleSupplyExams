@@ -2,29 +2,20 @@ October 2015
 				PART A
 
 1) 	List the steps needed to provide a formal specification of a problem.
-
 2) 	What did a production system consists of?
-
 3) 	Write the logical representaion of the following fact: 
 	ALL computers have 
 	monitor and some of the monitors have LED and others 
 	have LCD screens.
-
 4) 	Give the relational Knowledge of a simple fact in Prolog 
 	for a relationalsystem that has Players, Batting and Bowling 
 	averages for their selection.
-
 5)	How actions are represented in STRIPS like languages ?
-
 6) 	How POP (Partial Order Planning) solves the spare tire problem?
 	Write the problem description with sequence of events.
-
 7)	What is the forward chaining ?
-
 8)	Write a note on backward chaining.
-
 9)	What will be the contents of a frame based System ?
-
 10) 	Which componenets are needed for a speaker in communication 
 	for natural language processing?
 
@@ -32,29 +23,21 @@ October 2015
 
 11 	a) How pattern directed search works in an AI system?
      	b) What is recognized-act cycle ?
-
 12 	a) How the efficiency of a search algorithm is calculated?
      	b) write the Min-Max search procedure applied in Game 
      	playing.
-
 13 	a) How resolution is done in predicate logic?
      	b) What is a perception ? How perception learning helps in 
      	knowledge 
      	representation ? Give an example.
-
 14 	a) How planning with forward state-space search works ?
      	b) How conditional plannning works in fully observable
      	environments?
-
 15 	a) write the information contained in a slot of a frame 
      	based system.
-
      	b) What are the class and instance frames ? Give an example of 
      	your own.
-
 16 	a) Draw the inheritance of slot values in a frame based expert 
 	system for zero emission vehicles.
-
-
 	b) What is rule value approach? Give an example. 
 

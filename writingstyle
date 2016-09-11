@@ -1,16 +1,8 @@
 follow a pattern 
 
 a line length not more than 80 colunms.each line in a paragraph should be 4 
-characters less(not strictly 4 but  less,easy to read).only three lines per 
-paragraph.
+characters less(not strictly 4 but  less,easy to read).
 
-Example
-
-
-
-#Therefore, if the attributes are left unnormalized, the distance measurements 
-#taken on annual salary will generally outweigh distance measurements 
-#taken on age.
-
+Rules: make it readable.
 
 thats all about rules now add more if you want.
