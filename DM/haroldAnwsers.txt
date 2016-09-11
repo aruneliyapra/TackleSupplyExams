@@ -1,0 +1,261 @@
+////this is just Example
+
+1. What is transactional data? Explain with an Example?
+	
+In general, each record in a transactional database captures a transaction,suchas a customer’s purchase, a flight booking, or a user’s clicks on a 
+web page. 
+
+A transaction typically includes a unique transaction identity number (trans ID) 
+and a
+list of the items making up the transaction, 
+
+such as the items purchased in the transaction. 
+
+A transactional database may have additional tables, which contain other 
+information related to the transactions, 
+
+such as item description, information about the 
+salesperson or the branch, 
+
+and so on. 
+
+
+Example 1.4 A transactional database for AllElectronics. 
+
+
+Transactions can be stored in a table, 
+with one record per transaction. 
+
+A fragment of a transactional database for AllElectronics is 
+shown in Figure 1.8. 
+
+From the relational database point of view, the sales table in the 
+figure is a nested relation because the attribute list of item 
+IDs contains a set of items. 
+
+Because most relational database systems do not support nested relational 
+structures, the transactional database is usually either stored in a flat file 
+in a format similar to the 
+table in Figure 1.8 or unfolded into a standard 
+relation in a format similar to the items sold 
+table in 
+Figure 1.5. 
+
+
+
+As an analyst of AllElectronics, you may ask,
+“Which items sold well together?” 
+This kind of market basket data analysis would enable you to bundle groups of 
+items together as a strategy for 
+boosting sales. For example, given the knowledge 
+that printers are 
+
+
+commonly purchased together with computers, you could offer certain printers 
+at a steep discount (or even for free) 
+to customers buying selected computers, in the hopes of 
+selling more computers (which are often more expensive 
+than printers). 
+
+
+A traditional database system is not able to perform market basket data 
+analysis.
+
+Fortunately, 
+data mining on transactional data can do so by mining frequent itemsets, that is, 
+sets 
+
+
+of items that are frequently sold together. The mining of such frequent patterns 
+from 
+transactional data is discussed in Chapters 6 and 7.
+
+
+
+
+trans ID 		list of item IDs 
+T100 			I1, I3, I8, I16 
+T200 			I2, I8 
+... 			... 
+
+
+Figure 1.8:- Fragment of a transactional database for sales at AllElectronics.
+
+
+
+
+
+
+
+	In this section, we look at the major steps involved in data preprocessing,
+	namely, 
+
+data cleaning, 
+data integration, 
+data reduction,
+ 
+and
+ 
+data transformation. 
+
+Data cleaning routines work to “clean” the data by filling in missing values, 
+smoothing noisy data, identifying or 
+removing outliers, and resolving inconsistencies. 
+
+If users believe the data are dirty, they are unlikely to trust the results of 
+any data mining that has been applied. 
+Furthermore, dirty data can cause confusion for 
+the mining procedure, resulting in unreliable 
+output. 
+
+
+Although most mining routines have some procedures for dealing with 
+incomplete or noisy data, they are not always robust. Instead, they may 
+concentrate on avoiding overfitting 
+the data to the function being modeled. Therefore, 
+a useful preprocessing step is to run your data 
+through some data cleaning routines. 
+
+
+
+
+Getting back to your task at AllElectronics, suppose that you would like to 
+include data from multiple sources in your analysis. 
+This would involve integrating multiple databases, 
+data cubes, or files (i.e., data integration). 
+
+Yet some attributes representing a given concept may have different names 
+in different databases, causing 
+inconsistencies and redundancies. 
+
+
+
+For example,
+ 
+the attribute for customer identification may be referred to as customer id in 
+one data store and cust id in another. 
+
+Naming inconsistencies may also occur for attribute values. 
+For example, the same first name could be registered as 
+“Bill” in one database, “William” in another, and “B.”
+in a third. Furthermore, you suspect that some 
+attributes may be inferred from others 
+(e.g., annual revenue). 
+
+
+
+Having a large amount of redundant data may slow down or confuse the 
+knowledge discov ery process. Clearly, in addition to data cleaning, steps must 
+be taken to help avoid 
+redundancies during data integration. 
+
+Typically, data cleaning and data integration are performed as a preprocessing 
+step when preparing data for a data warehouse. 
+Additional data cleaning can be performed to detect and 
+remove redundancies that may have resulted from 
+data integration. 
+
+
+<!--“Hmmm,” 
+
+you wonder, as you consider your data even further. 
+
+“The data set I have selected for analysis is HUGE, which is sure to slow down 
+the mining process. Is there a way I can reduce the size of my data set without
+ jeopardizing the data mining results?” --!>
+
+
+Data reduction obtains a reduced representation of the data set that is much 
+smaller in volume, yet produces the same (or almost the same) analytical 
+results. 
+
+Data reduction strategies include 
+
+1)dimensionality reduction and 
+
+2)numerosity reduction.
+
+In dimensionality reduction, data encoding schemes are applied so as to obtain 
+a reduced or “compressed” representation of the original data. Examples include 
+
+data compression techniques
+(e.g., wavelet transforms and principal components analysis), 
+
+
+attribute subset selection 
+(e.g., removing irrelevant attributes),
+
+and 
+
+attribute construction 
+(e.g., where a small set of more useful attributes is derived from the original set). 
+
+
+In numerosity reduction, the data are replaced by alternative, smaller 
+representations using 
+parametric models 
+(e.g., regression or log-linear models) or 
+
+nonparametric models 
+(e.g., histograms, clusters, sampling, or data aggregation). 
+
+Data reduction is the topic of Section 3.4. 
+
+
+
+Getting back to your data, you have decided, say, that you would like to use a 
+distance based mining algorithm for your analysis, such as 
+neural networks, 
+nearest-neighbor classifiers, 
+or clustering. 
+
+
+Such methods provide better results if the data to be analyzed have been 
+normalized, that is, scaled to a smaller range 
+such as [0.0, 1.0]. 
+
+Your customer data, for example, contain the attributes age and annual salary.
+ 
+The annual salary attribute usually takes much larger values than age. 
+
+
+Therefore, if the attributes are left unnormalized, the distance measurements 
+taken on annual salary will generally 
+outweigh distance measurements taken on age.
+
+ 
+Discretization and concept hierarchy 
+gen eration can also be useful, 
+
+where raw data values for attributes are replaced by ranges or 
+higher conceptual levels. For example, raw values for age 
+may be replaced by higher-level concepts, such as youth, 
+adult, or senior. 
+
+Discretization and concept hierarchy generation are powerful tools for data mining 
+in that they allow data mining at multiple abstraction levels. 
+
+Normalization, data discretization, and concept hierarchy generation are forms of 
+data transformation. 
+
+You soon realize such data transformation operations are additional data 
+preprocessing procedures that would 
+contribute toward the success of the mining process. 
+
+Data integration and data discretization are discussed in Sections 3.5. 
+
+
+Figure 3.1 summarizes the data preprocessing steps described here. Note that the 
+previous categorization is not mutually exclusive. For example, the removal of 
+redundant data may be seen as a form of data cleaning, as well as data reduction. 
+
+
+In summary, real-world data tend to be dirty, incomplete, and inconsistent. 
+Data preprocessing techniques can improve data quality, thereby helping to improve 
+the  accuracy and efficiency of the subsequent mining process. 
+
+
+Data preprocessing is an important step in the knowledge discovery process, because 
+quality decisions must be based on quality data. Detecting data anomalies, 
+rectifying them early, and reducing 
+the data to be analyzed can lead to huge payoffs for decision making.
