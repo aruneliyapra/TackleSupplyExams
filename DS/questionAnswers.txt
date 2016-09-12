@@ -1,1 +1,33 @@
-questionAnswers.txt
+April 2015
+			PART A
+
+
+1.	Distributed data preprocessing uses divide and conquer method.Comment
+2.	Defne architectural model
+3.	Write two advantages and disadvantges of fragmentation.
+4.	What is the complexity of following relational algebra operations:
+	i) Semi-join
+	ii) Cartisian product
+5.	What are the main reasons for query getting rejected?
+6.	Define the terms:
+	i) Linear Join Tree
+	ii)Bushy join Tree
+7.	How distributed INGRES algorithm differs from R* algorithm in terms of 
+	objective function?
+8.	List the goals of semantic data control.
+9.	Discuss the classification criteria of concurrency control approaches.
+10.	Define steady state availability of a system and parameters used in formulating the same.
+
+			PART B
+
+			moduele 1
+11.	Explain about the architecture of Distributed DBMS.
+
+12.	Explain about fragmentation with suitable examples in distributed database
+ 	systems.
+
+ 			module 2
+13.	Discuss about query processing. Explain the layers of query processing.
+14.	Explain in detail distributed query optimization algorithms.
+15.	Explain transaction management in distributed database systems.with examples
+16.	Explain in detail time stamp based and optimistic concurrency control algorithms
