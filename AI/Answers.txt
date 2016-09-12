@@ -1,12 +1,17 @@
 October 2015
 				PART A
 
-7)FORWARD CHAINING:The Standard definition of a forward chaining system states that it is a problem solving technique used by Expert Systems 
-when they are faced with a scenario and have to give a solution or conclusion to this scenario.The system will work its way through the 
-rules, finding which ones fit and which leads to which using Deductive Reasoning.An inference engine uses forward chaining searches the
-inference rules until it finds where the IF clause is known to be true.whenever it can conclude or infer the THEN clause,resulting in
-the addition of new information to its dataset.In other words it starts with some facts and applies rule to find all possible conclusions.
-therefore forward chaining system is also known as data driven system.
+7)FORWARD CHAINING:The Standard definition of a forward chaining system states 
+that it is a problem solving technique used by Expert Systems when they are faced 
+ with a scenario and have to give a solution or conclusion to this scenario.The 
+ system will work its way through the rules, finding which ones fit and which 
+ leads to which using Deductive Reasoning.An inference engine uses 
+forward chaining searches the inference rules until it finds where the 
+IF clause is known to be true.whenever it can conclude or infer the 
+THEN clause,resulting in the addition of new information to its 
+dataset.In other words it starts with some facts and applies 
+rule to find all possible conclusions.therefore forward 
+chaining system is also known as data  driven system.
 
 EXAMPLE:
 Rules
@@ -20,9 +25,9 @@ F3:smoky[from F1 by R2]
 F4:fire[from F2,F4 by R1]
 F5:switch_on_sprinklers[from F4 by R3]
 
-In a forward chaining system facts are held in a working memory condition-action, rules represents 
-actions to take when specified facts occourin working memory.Typically the actions involve adding
-or deleting facts from working memory.
+In a forward chaining system facts are held in a working memory condition-action, 
+rules represents actions to take when specified facts occourin working memory.
+Typically the actions involve adding or deleting facts from working memory.
 
 Properties of Forward Chaining:
 1)All rules which can fire will do fire.
