@@ -27,12 +27,15 @@ table in  Figure 1.5.
 
 As an analyst of AllElectronics, you may ask,
 “Which items sold well together?” 
+
 This kind of market basket data analysis would enable you to bundle groups of 
 items together as a strategy for 
+
 boosting sales. For example, given the knowledge that printers are
 commonly purchased together with computers, you could offer 
 certain printers at a steep discount (or even for free) to 
 customers buying selected computers, in the hopes of 
+
 selling more computers (which are often more expensive than printers). 
 A traditional database system is not able to perform market basket data 
 analysis.Fortunately, 
@@ -103,10 +106,9 @@ discovery process. Clearly, in addition to data cleaning, steps must
 be taken to help avoid redundancies during data integration. 
 
 Typically, data cleaning and data integration are performed as a preprocessing 
-step when preparing data for a data warehouse. Additional 
-data cleaning can be performed to detect and 
-remove redundancies that may have resulted 
-from data integration. 
+step when preparing data for a data warehouse. Additional data cleaning 
+can be performed to detect and remove redundancies that may have 
+resulted from data integration. 
 
 you wonder, as you consider your data even further. 
 
