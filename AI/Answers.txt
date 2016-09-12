@@ -28,7 +28,7 @@ F4:fire[from F2,F4 by R1]
 F5:switch_on_sprinklers[from F4 by R3]
 
 In a forward chaining system facts are held in a working memory condition-action, 
-rules represents actions to take when specified facts occour in working memory.
+rules represents actions to take when specified facts occourin working memory.
 Typically the actions involve adding or deleting facts from working memory.
 
 Properties of Forward Chaining:
