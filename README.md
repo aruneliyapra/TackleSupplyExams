@@ -36,11 +36,11 @@ Read works.txt also
 	password.You can log into this acount and commit changes.
 	please don't destroy this lives at stake here!!!
 
+#for git users
 ⁠⁠first
-		create a github account
-		fork the repository 
-		"A button will be there to fork" 
-		cd to a convinient directory
+create a github accountfork the repository 
+"A button will be there to fork" 
+cd to a convinient directory
 
 #try to use ubuntu 
 from your account 
