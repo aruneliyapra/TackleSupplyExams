@@ -30,27 +30,31 @@ it will be in a sepparate directory
 Read works.txt also 
 
 
-⁠⁠⁠first
-create a github account
-fork the repository A button will be there
+#For those who wish to help but don't want git 
+⁠
+	you can sent email to me haroldgomez40@gmail.com I will sent you 
+	password.You can log into this acount and commit changes.
+	please don't destroy this lives at stake here!!!
 
-cd to a convinient directory
+⁠⁠first
+		create a github account
+		fork the repository 
+		"A button will be there to fork" 
+		cd to a convinient directory
 
 #try to use ubuntu 
 from your account 
 use the clone link
 
-
 ```javascript
 git clone http://yourlinklinklinllink
 ```
-go inside the directory which is  a repo
+go inside the directory where the repo locates
 
 ```javascript
 cd TackleSupplyExams
 ```
-
-use sublime to open the TackleSupplyExams folders
+use sublime to open the TackleSupplyExams folders it's easy
 
 add Answers
 
@@ -87,8 +91,8 @@ git push
 
 ```javascript
 
-Username for 'https://github.com':  	//you know it
-Password for 'https://youraccount@github.com': 		//you know it
+Username for 'https://github.com':  	//username//
+Password for 'https://youraccount@github.com':******** 		//password// 
 ```
 
 
@@ -107,11 +111,11 @@ do the things as you like
 I will merge it.
 
 # git pull every time before you edit anything in your repo
-# it will download every changes made by others to your repo
+ doing that will download every changes made by others to your repo
 
 #another super simple way if you use linux
 
-#use ubuntu
+use ubuntu terminal
 
 
 ```javascript
@@ -150,18 +154,16 @@ git commit -m "message"     //think message as a variable with type char you can
 
 ```
 
-
 ```javascript
 
 git push 
 
 ```
 
-
 ```javascript
 
-Username for 'https://github.com':  	//you know it
-Password for 'https://supplymca@github.com': 		//you know it
+Username for 'https://github.com':  	//username//
+Password for 'https://supplymca@github.com': ********		//password//  //askmepassword
 ```
 
 
