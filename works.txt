@@ -1,7 +1,7 @@
 If you are editing a file
 write here.
 
-Others do not edit that file after auther removed 
+Others do not edit that file after author removed 
 it from here.
 
 example
