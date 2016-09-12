@@ -34,23 +34,3 @@ Properties of Forward Chaining:
 2)Set of rules that can fire is known as conflict set.
 3)Decision about which rule to fire--Conflict resolution.
 
-8)BACKWARD CHAINING:Its a reasoning technique employed by expert systems to take, what we call in technical terms, a goal, and prove that this goal
-was founded legitimately according to the rule base it possesses. It is a form of reverse engineering, which is very applicable in situations where 
-there are so many rules that could be applied to a single problem.Same rules or facts may be processed differently by using backward chaining interpreter
-
-EXAMPLE:
-Hypothesis("Should i switch the sprinklers on?")
-Rules
-R1:IF hot AND smoky THEN fire
-R2:IF alarm_beeps THEN smoky
-R3:if fire THEN switch_on_sprinklers
-Facts
-F1:hot
-F2:alarm_beeps
-Goal:
-Switch on sprinklers
-
-Backward chaining systems are good for diagnostic and classification tasks, but they are not good for planning,design,process Monitioring and quite a few other
-tasks.Forward chaining systems can handle these tasks.backward chaining tries to focus and tries to avoid exploring unnecessary paths for reasoning.Backward Chaining
-is more appropriate when the conclusion is already known. It will seems to run more efficiently than its counterpart, but can only be used in that context.
-
