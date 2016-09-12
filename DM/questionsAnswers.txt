@@ -32,3 +32,29 @@ March 2014
 
 16	Discuss in detail different types of information retrieval with proper 
 	examples.
+
+
+
+October 2015
+
+				PART A
+
+1.	Explain the classsification of data mining systems.
+2.	State why data preprocessing is necessary. Specify the various forms of
+	data preprocessing.
+3.	State the difference between Data Warehousing and Data Mining.
+4.	Define Association rule mining. Explain the different types of it with 
+	suitable example.
+5.	Define Outlier Analysis. Why is it important for many applications ?
+6.	write a short note on machine learning.
+7.	Discuss tree pruning methods.
+8.	Explain in detail about Genetic algorithm.
+9.	What is periodicity analysis for time-related sequence data ?
+10.	Discuss various approaches proposed for similarity-based retrieval in image
+	databases.
+
+				PART B
+
+
+
+
