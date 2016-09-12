@@ -16,5 +16,10 @@ don't edit the questionAnswers.txt
 it is only for questions
 create your own file for Answers.
 
-you can create your own folders to answer an answer 
+you can create your own folders to answer 
+
+an answer 
 will be finalized later.
+
+
+it will be in a sepparate directory
