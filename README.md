@@ -25,7 +25,7 @@ will be finalized later.
 it will be in a sepparate directory
 
 
-important
+#important
 
 Read works.txt also 
 
@@ -106,7 +106,8 @@ do the things as you like
 
 I will merge it.
 
-
+# git pull every time before you edit anything in your repo
+# it will download every changes made by others to your repo
 
 #another super simple way if you use linux
 
@@ -165,3 +166,4 @@ Password for 'https://supplymca@github.com': 		//you know it
 
 
 done
+
