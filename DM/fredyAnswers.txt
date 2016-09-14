@@ -1,7 +1,13 @@
+March 2014
 
-13	a) Explain Bayessian classification.
+                                      PART B
 
-Bayesian classification is based on Bayes' Theorem. Bayesian classifiers are the statistical classifiers. Bayesian classifiers can predict class membership probabilities such as the probability that a given tuple belongs to a particular class.
+13          a) Explain Bayessian classification.
+
+Bayesian classification is based on Bayes' Theorem. Bayesian classifiers are the
+statistical classifiers. Bayesian classifiers can predict class membership 
+probabilities such as the probability that a given tuple belongs to a 
+particular class.
 
  There are two types of probabilities 
  
@@ -11,63 +17,69 @@ Bayesian classification is based on Bayes' Theorem. Bayesian classifiers are the
  where X is data tuple and H is some hypothesis.
  According to Bayes' Theorem,
  
- P(H/X)= P(X/H)P(H) / P(X)
+ P(H/X) = P(X/H)P(H) / P(X)
  
 P(H|X) is the posterior probability of H conditioned on X.
-For example, suppose our world of data tuples is confined to customers described by
-the attributes age and income, respectively, and that X is a 35-year-old customer with
-an income of $40,000. Suppose that H is the hypothesis that our customer will buy a
-computer. Then P(H|X) reflects the probability that customer X will buy a computer
-given that we know the customer’s age and income.
+For example, suppose our world of data tuples is confined to customers described 
+by the attributes age and income, respectively, and that X is a 35-year-old 
+customer with an income of $40,000. Suppose that H is the hypothesis that 
+our customer will buy a computer. Then P(H|X) reflects the probability 
+that customer X will buy a computer given that we know the 
+customer’s age and income.
 
-In contrast, P(H) is the prior probability, or a priori probability, of H. For our exam-
-ple, this is the probability that any given customer will buy a computer, regardless of age,
-income, or any other information, for that matter. The posterior probability, P(H|X),
-is based on more information (e.g., customer information) than the prior probability,
-P(H), which is independent of X.
+In contrast, P(H) is the prior probability, or a priori probability, of H. For our 
+example, this is the probability that any given customer will buy a 
+computer, regardless of age,income, or any other information, 
+for that matter. The posterior probability, P(H|X), is based on 
+more information (e.g., customer information) than the prior 
+probability,P(H), which is independent of X.
 
-Similarly, P(X|H) is the posterior probability of X conditioned on H. That is, it is the
-probability that a customer, X, is 35 years old and earns $40,000, given that we know the
-customer will buy a computer.
-P(X) is the prior probability of X. Using our example, it is the probability that a person
-from our set of customers is 35 years old and earns $40,000.
+Similarly, P(X|H) is the posterior probability of X conditioned on H. That is, it is 
+the probability that a customer, X, is 35 years old and earns $40,000, given 
+that we know the customer will buy a computer.P(X) is the prior probability 
+of X. Using our example, it is the probability that a person
+from our set of customers is 35 years old and earns 
+$40,000.
 
 Naive Bayesian Classification(simple Bayesian classifier)
 
 The naïve Bayesian classifier, or simple Bayesian classifier, works as follows:
 
-1. Let D be a training set of tuples and their associated class labels. As usual, each tuple
-is represented by an n-dimensional attribute vector, X = (x 1 , x 2 , . . . , x n ), depicting n
-measurements made on the tuple from n attributes, respectively, A 1 , A 2 , . . . , A n .
+1. Let D be a training set of tuples and their associated class labels. As usual, 
+each tuple is represented by an n-dimensional attribute vector, 
+X = (x 1 , x 2 , . . . , x n ), depicting n measurements made 
+on the tuple from n attributes, respectively, A 1 , A 2 , . . . , A n .
 
-2. Suppose that there are m classes, C 1 , C 2 , . . . , C m . Given a tuple, X, the classifier will
-predict that X belongs to the class having the highest posterior probability, condi-
-tioned on X. That is, the naïve Bayesian classifier predicts that tuple X belongs to the
-class C i if and only if
+2. Suppose that there are m classes, C 1 , C 2 , . . . , C m . Given a tuple, X, the 
+classifier will predict that X belongs to the class having the highest posterior 
+probability, conditioned on X. That is, the naïve Bayesian classifier predicts 
+that tuple X belongs to the class C i if and only if
 P(C i |X) > P(C j |X)
 for 1 ≤ j ≤ m, j 6 = i.
-Thus we maximize P(C i |X). The class C i for which P(C i |X) is maximized is called the
-maximum posteriori hypothesis. By Bayes’ theorem (Equation (6.10)),
+Thus we maximize P(C i |X). The class C i for which P(C i |X) is maximized is called 
+the maximum posteriori hypothesis. By Bayes’ theorem (Equation (6.10)),
 
 P(C i |X) =P(X|C i )P(C i )/P(X)
 
-3.As P(X) is constant for all classes, only P(X|C i )P(C i ) need be maximized. If the class
-prior probabilities are not known, then it is commonly assumed that the classes are
-equally likely, that is, P(C 1 ) = P(C 2 ) = · · · = P(C m ), and we would therefore maximize P(X|C i ).
-Otherwise, we maximize P(X|C i )P(C i ). Note that the class prior probabilities may be estimated by
-P(C i ) = |C i , D |/|D|, where |C i , D | is the number of training tuples of class C i in D.
+3.As P(X) is constant for all classes, only P(X|C i )P(C i ) need be maximized. If the 
+class prior probabilities are not known, then it is commonly assumed that the 
+classes are equally likely, that is, P(C 1 ) = P(C 2 ) = · · · = P(C m ), and we 
+would therefore maximize P(X|C i ).Otherwise, we maximize P(X|C i )P(C i ). 
+Note that the class prior probabilities may be estimated by 
+P(C i ) = |C i , D |/|D|, where |C i , D | is the number of 
+training tuples of class C i in D.
 
-4. Given data sets with many attributes, it would be extremely computationally expen-
-sive to compute P(X|C i ). In order to reduce computation in evaluating P(X|C i ), the
-naive assumption of class conditional independence is made. This presumes that
-the values of the attributes are conditionally independent of one another, given the
-class label of the tuple(i.e., that there are no dependence relationships among the
-attributes)
+4. Given data sets with many attributes, it would be extremely computationally expensive
+to compute P(X|C i ). In order to reduce computation in evaluating P(X|C i ), the naive 
+assumption of class conditional independence is made. This presumes that the values 
+of the attributes are conditionally independent of one another, given the class label 
+of the tuple(i.e., that there are no dependence relationships among the attributes)
 
 P(X|C i ) = P(x 1 |C i ) × P(x 2 |C i ) × · · · × P(x n |C i ).
     
-    4.1 If A k is categorical, then P(x k |C i ) is the number of tuples of class C i in D having
-        the value x k for A k , divided by |C i , D |, the number of tuples of class C i in D.
+    4.1 If A k is categorical, then P(x k |C i ) is the number of tuples of class C i in D 
+          having the value x k for A k , divided by |C i , D |, the number of tuples of 
+          class C i in D.
     4.2 If A k is continuous-valued,Gaussian distribution is applied
     
 5. In order to predict the class label of X, P(X|C i )P(C i ) is evaluated for each class C i .
@@ -82,14 +94,21 @@ maximum."
 
 
 
-13.b With proper example, explain the K-means method.
+-------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+13.       b) With proper example, explain the K-means method.
 
 Centroid-Based Technique: The k -Means Method
 
 The k-means algorithm takes the input parameter, k, and partitions a set of n objects into
 k clusters so that the resulting intracluster similarity is high but the intercluster similarity
-is low. Cluster similarity is measured in regard to the mean value of the objects in a cluster,
-The k-means algorithm proceeds as follows.
+is low. Cluster similarity is measured in regard to the mean value of the objects in a 
+cluster,The k-means algorithm proceeds as follows.
 
 First, it randomly selects k of the objects, each of which initially represents a cluster mean
 or center.For each of the remaining objects, an object is assigned to the cluster to which
@@ -109,9 +128,9 @@ Output: A set of k clusters.
 Method:
 (1) arbitrarily choose k objects from D as the initial cluster centers;
 (2) repeat
-  (3)(re)assign each object to the cluster to which the object is the most similar,
+(3)(re)assign each object to the cluster to which the object is the most similar,
       based on the mean value of the objects in the cluster;
-  (4)update the cluster means, i.e., calculate the mean value of the objects for
+(4)update the cluster means, i.e., calculate the mean value of the objects for
      each cluster;
 (5) until no change;
 
@@ -126,7 +145,7 @@ initial clusters(2 nos)(choosen random)
 C1={13},centroid=13
 C2={20},centroid=20
 
-ITRATION STARTS
+ITERATION STARTS
 
 Taking each element from D
 
@@ -155,9 +174,20 @@ and each element is added to the cluster which has closest centroid to it.
 eg: '5' will be added to c1,
 
 
-THE ITRATION PROCESS WILL BE REEPEATED MANY TIMES UNTILL A PARTICULAR LIMIT REACHED OR REFINED CLUSTERS ARE FORMED
+THE ITRATION PROCESS WILL BE REEPEATED MANY TIMES UNTILL A PARTICULAR LIMIT 
+REACHED OR REFINED CLUSTERS ARE FORMED
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------
+
+
 
 Best of Luck Guys :)
 
 
 
+-------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------
