@@ -1,0 +1,113 @@
+March 2014
+			PART A
+
+5.	What is tree pruning?Explain.
+
+Pruning is a technique in machine learning that reduces the size of decision trees 
+by removing sections of the tree that provide little power to classify instances. 
+Pruning reduces the complexity of the final classifier, and hence improves 
+predictive accuracy by the reduction of overfitting.
+
+	A decision tree is a structure that includes a root node, branches, and leaf 
+nodes.Each internal node denotes a test on an attribute, each branch denotes the 
+outcome of a test,and each leaf node holds a class label. The topmost node in 
+the tree is the root node.
+
+Tree pruning is performed in order to remove anomalies in the training data due 
+to noise or  outliers. The pruned trees are smaller and less complex.
+
+Tree Pruning Approaches
+
+Here is the Tree Pruning Approaches listed below −
+
+ Pre-pruning − The tree is pruned by halting its construction early.
+ Post-pruning - This approach removes a sub-tree from a fully grown tree.
+
+	Pruning should reduce the size of a learning tree without reducing predictive 
+accuracy as measured by a cross-validation set. There are many techniques for tree 
+pruning that differ in the measurement that is used to optimize performance.
+
+Techniques
+
+	Pruning can occur in a top down or bottom up fashion. A top down pruning will 
+traverse nodes and trim subtrees starting at the root, while a bottom up pruning will 
+start at the leaf nodes. Below are several popular pruning algorithms.
+
+	Reduced error pruning: One of the simplest forms of pruning is reduced error 
+pruning. Starting at the leaves, each node is replaced with its most popular class. If the 
+prediction accuracy is not affected then the change is kept. While somewhat naive, 
+reduced error pruning has the advantage of simplicity and speed.
+
+Cost Complexity
+
+The cost complexity is measured by the following two parameters −
+
+ Number of leaves in the tree, and Error rate of the tree.
+
+-------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+7.	Give a note about neural networks.
+
+	An artificial neural network (ANN), often just called a "neural network" (NN), is a
+mathematical model or computational model based on biological neural networks, in 
+other words, is an emulation of biological neural system. It consists of an interconnected 
+group of artificial neurons and processes information using a connectionist approach to 
+computation. In most cases an ANN is an adaptive system that changes its structure 
+based on external or internal information that flows through the network during the 
+learning phase:
+
+Neural Network Topologies: 
+
+Feedforward neural network: The feedforward neural network was the first and arguably 
+simplest type of artificial neural network devised. In this network, the information 
+moves in only one direction, forward, from the input nodes, through the hidden 
+nodes (if any) and to the output nodes. There are no cycles or loops in the 
+network. The data processing can extend over multiple (layers of) units, 
+but no feedback connections are present, that is, connections extending 
+from outputs of units to inputs of units in the same layer or previous 
+layers.
+
+Recurrent network: Recurrent neural networks that do contain feedback connections. 
+Contrary to feedforward networks, recurrent neural networks (RNs) are models with 
+bi-directional data flow. While a feedforward network propagates data linearly from 
+input to output, RNs also propagate data from later processing stages to earlier 
+stages. 
+
+Training Of Artificial Neural Networks: 
+
+A neural network has to be configured such that the application of a set of inputs produces 
+(either  'direct' or via a relaxation process) the desired set of outputs. Various methods to 
+set the strengths of the connections exist. One way is to set the weights explicitly, using 
+a priori knowledge. Another way is to 'train' the neural network by feeding it teaching 
+patterns and letting it change its weights according to some learning rule. We can 
+categorize the learning situations as follows: 
+
+Supervised learning or Associative learning: in which the network is trained by providing it 
+with input and matching output patterns. These input-output pairs can be provided by an 
+external teacher, or by the system which contains the neural network (self-supervised). 
+
+Unsupervised learning or Self-organization: in which an (output) unit is trained to respond to 
+clusters of pattern within the input. In this paradigm the system is supposed to discover 
+statistically salient features of the input population. Unlike the supervised learning 
+paradigm, there is no a priori set of categories into which the patterns are to be 
+classified; rather the system must develop its own representation of the input 
+stimuli. 
+
+Reinforcement Learning: This type of learning may be considered as an intermediate form 
+of the above two types of learning. Here the learning machine does some action on the 
+environment and gets a feedback response from the environment. The learning system 
+grades its action good  (rewarding) or bad (punishable) based on the environmental 
+response and  accordingly adjusts its parameters. 
+
+NEURAL NETWORKS IN DATA MINING: 
+
+In more practical terms neural networks are non-linear statistical data modeling tools. 
+They can be used to model complex relationships between inputs and outputs or to 
+find patterns in data. Using neural networks as a tool, data warehousing firms are 
+harvesting information from datasets in the process known as data mining. 
+The difference between these data warehouses and  ordinary databases is 
+that there is actual anipulation and cross-fertilization of the data helping 
+users makes more informed decisions. 

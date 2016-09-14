@@ -1,1 +1,25 @@
-questionAnswers.txt
+March 2014
+
+
+				PART A
+
+1.	List some uses of RTP.
+2.	Explain SIP messages.
+3.	Discuss H.323 to SIP gateways.
+5.	Explain video compression.
+6.	List and explain the protocols supporting streaming multimedia content.
+7.	Explain P2P concept clearly.
+8.	Explain Wide-Area Wireless IP connectivity.
+9.	What are the applications of 4G ? Explain.
+10.	Explain Radio Access Control in wireless IP.
+
+
+				PART B
+
+11.	Explain encoding media strams on detail.
+12.	Explain media gateway to media controller protocol in detail.
+13.	Explain the streaming system architecture and applications.
+14 	a) Explain about video conferencing.
+	b) Discuss about Internet Video.
+15.	Describe in detail 3G networks and standards.
+16.	Discuss in detail mobile IP and security in wireless networks.

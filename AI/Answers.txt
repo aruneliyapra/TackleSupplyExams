@@ -1,0 +1,74 @@
+October 2015
+				PART A
+
+
+7)FORWARD CHAINING:The Standard definition of a forward chaining system states 
+that it is a problem solving technique used by Expert Systems when they are faced 
+with a scenario and have to give a solution or conclusion to this scenario.The 
+system will work its way through the rules, finding which ones fit and which 
+leads to which using Deductive Reasoning.
+
+An inference engine uses forward chaining, searches the inference rules until it finds
+where the IF clause is known to be true.whenever it can conclude or infer the 
+THEN clause,resulting in the addition of new information to its dataset.
+In other words it starts with some facts and applies rule to find all 
+possible conclusions.therefore forward chaining system is also 
+known as data  driven system.
+
+EXAMPLE:
+Rules
+R1:IF hot AND smoky THEN ADD fire
+R2:IF alarm_beeps THEN ADD smoky
+R3:if fire THEN ADD switch_on_sprinklers 
+Facts
+F1:alarm_beeps[Given]
+F2:hot[Given]
+F3:smoky[from F1 by R2]
+F4:fire[from F2,F4 by R1]
+F5:switch_on_sprinklers[from F4 by R3]
+
+In a forward chaining system facts are held in a working memory condition-action, 
+rules represents actions to take when specified facts occourin working memory.
+Typically the actions involve adding or deleting facts from working memory.
+
+Properties of Forward Chaining:
+1)All rules which can fire will do fire.
+2)Set of rules that can fire is known as conflict set.
+3)Decision about which rule to fire--Conflict resolution.
+
+-------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------
+
+8)BACKWARD CHAINING:Its a reasoning technique employed by expert systems to take, 
+what we call in technical terms, a goal, and prove that this goal was founded 
+legitimately according to the rule base it possesses. It is a form of reverse 
+engineering, which is very applicable in situations where
+there are so many rules that could be applied to a single 
+problem.Same rules or facts may be processed 
+differently by using backward chaining interpreter
+
+EXAMPLE:
+Hypothesis("Should i switch the sprinklers on?")
+Rules
+R1:IF hot AND smoky THEN fire
+R2:IF alarm_beeps THEN smoky
+R3:if fire THEN switch_on_sprinklers
+Facts
+F1:hot
+F2:alarm_beeps
+Goal:
+Switch on sprinklers
+
+Backward chaining systems are good for diagnostic and classification tasks, but they are 
+not good for planning,design,process Monitioring and quite a few other
+tasks.Forward chaining systems can handle these tasks.backward 
+chaining tries to focus and tries to avoid exploring unnecessary paths 
+for reasoning.Backward Chainingis more appropriate when the 
+conclusion is already known. It will seems to run more 
+efficiently than its counterpart, but can only be used in 
+that context.
+
+-------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------
