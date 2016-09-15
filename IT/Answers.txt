@@ -1,27 +1,50 @@
-PART A
+March 2014
 
-2)The Session Initiation Protocol (SIP) is a communications protocol for signaling and controlling multimedia communication sessions.
-The most common applications of SIP are in Internet telephony for voice and video calls, as well as instant messaging, over 
-Internet Protocol (IP) networks.The protocol defines the messages that are sent between endpoints, which govern establishment, 
-termination and other essential elements of a call. SIP can be used for creating, modifying and terminating sessions consisting of one 
-or several media streams. SIP is an application layer protocol designed to be independent of the underlying transport layer. It is a text-based protocol,
-incorporating many elements of the Hypertext Transfer Protocol (HTTP) and the Simple Mail Transfer Protocol (SMTP).
 
-	a)SIP is a signalling protocol used to create, modify, and terminate a multimedia session over the Internet Protocol. 
-	  a session is nothing but a simple call between two endpoints. An endpoint can be a smartphone, a laptop, or any device 
-	  that can receive and transmit multimedia content over the Internet.
-	b)SIP is an application layer protocol defined by IETF (Internet Engineering Task Force) standard. 
-	  It is defined in RFC 3261.
-	c)SIP is incorporated with two widely used internet protocols: HTTP for web browser and SMTP used for email. 
-	  From HTTP, SIP borrowed the client-server architecture and the use of URL and URI. From SMTP, it borrowed 
-	  a text encoding scheme and a header style.
-	d)SIP takes the help of SDP (Session Description Protocol) which describes a session and RTP (Real Time Transport Protocol)
-	  used for delivering voice and video over IP network.
-	e)SIP can be used for two-party (unicast) or multiparty (multicast) sessions.
-	f)Other SIP applications include file transfer, instant messaging, video conferencing, 
-	  online games, and steaming multimedia distribution.
+					PART A
+
+2)	The Session Initiation Protocol (SIP) is a communications protocol for signaling and controlling 
+multimedia communication sessions.
+The most common applications of SIP are in Internet telephony for voice and video calls, as well 
+as instant messaging, over Internet Protocol (IP) networks.The protocol defines the messages 
+that are sent between endpoints, which govern establishment, termination and other 
+essential elements of a call. 
+
+SIP can be used for creating, modifying and terminating sessions consisting of one or 
+several media streams. SIP is an application layer protocol designed to be 
+independent of the underlying transport layer. It is a text-based protocol,
+incorporating many elements of the Hypertext Transfer Protocol (HTTP) 
+and the Simple Mail Transfer Protocol (SMTP).
+
+	a)  SIP is a signalling protocol used to create, modify, and terminate a multimedia session 
+	     over the Internet Protocol. 
+	     a session is nothing but a simple call between two endpoints. An endpoint can be a 
+	     smartphone, a laptop, or any device that can receive and transmit multimedia 
+	     content over the Internet.
+
+
+	b)  SIP is an application layer protocol defined by IETF (Internet Engineering Task Force) 
+	     standard. It is defined in RFC 3261.
+
+
+	c)  SIP is incorporated with two widely used internet protocols: HTTP for web browser and 
+	     SMTP used for email. 
+	     From HTTP, SIP borrowed the client-server architecture and the use of URL and URI. 
+	     From SMTP, it borrowed a text encoding scheme and a header style.
+
+
+	d)  SIP takes the help of SDP (Session Description Protocol) which describes a session and 
+	     RTP (Real Time Transport Protocol)
+	     used for delivering voice and video over IP network.
+
+
+	e)  SIP can be used for two-party (unicast) or multiparty (multicast) sessions.
+
+
+	f)  Other SIP applications include file transfer, instant messaging, video conferencing, 
+	     online games, and steaming multimedia distribution.
 
 	  
--------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------

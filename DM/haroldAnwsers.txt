@@ -62,7 +62,7 @@ T200 			I2, I8
 
 Figure 1.8:- Fragment of a transactional database for sales at AllElectronics.
 
-	In this section, we look at the major steps involved in data preprocessing,
+2)	In this section, we look at the major steps involved in data preprocessing,
 	namely, 
 
 data cleaning, 
