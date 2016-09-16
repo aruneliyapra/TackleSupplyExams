@@ -26,9 +26,7 @@ Read works.txt also
 
 #For those who wish to help but don't want git 
 ⁠
-you can sent email to me haroldgomez40@gmail.com I will sent you 
-password.You can log into this acount and commit changes.
-please don't destroy this lives at stake here!!!
+you can sent Answers as email to me haroldgomez40@gmail.com
 
 #for git users
 ⁠⁠first
