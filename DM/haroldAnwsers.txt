@@ -1,15 +1,8 @@
+March 2014
 
+			PART A
 
-
-
-//////////////////////////////////////////////////////////////////////////////
-//This is just Example now this is not clean I know //
-//////////////////////////////////////////////////////////////////////////////
-
-
-
-
-1. What is transactional data? Explain with an Example?
+1.	What is transactional data? Explain with an Example?
 	
 In general, each record in a transactional database captures a transaction,
 such as a customer’s purchase, a flight booking, or a user’s clicks on a 
@@ -62,18 +55,22 @@ T200 			I2, I8
 
 Figure 1.8:- Fragment of a transactional database for sales at AllElectronics.
 
-2)	In this section, we look at the major steps involved in data preprocessing,
-	namely, 
+-------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------
+
+2)	Discuss the major tasks in Data Preprocessing.
+
+The major steps involved in data preprocessing,
+	are, 
 
 data cleaning, 
 data integration, 
 data reduction,
- 
 and
- 
 data transformation. 
 
-Data cleaning routines work to “clean” the data by filling in missing values, 
+DATA CLEANING routines work to “clean” the data by filling in missing values, 
 smoothing noisy data, identifying or removing outliers, and resolving 
 inconsistencies. If users believe the data are dirty, they are unlikely 
 to trust the results of any data mining that has been applied. 
@@ -81,19 +78,18 @@ Furthermore, dirty data can cause confusion for the mining
 procedure, resulting in unreliable output. 
 
 
-Although most mining routines have some procedures for dealing with incomplete
- or noisy data, they are not always robust. Instead, they may concentrate 
+Although most mining routines have some procedures for dealing with incomplete 
+or noisy data, they are not always robust. Instead, they may concentrate 
 on avoiding overfitting the data to the function being modeled. 
 Therefore, a useful preprocessing step is to run your data 
 through some data cleaning routines. 
 
 
-
-
 Getting back to your task at AllElectronics, suppose that you would like to 
 include data from multiple sources in your analysis. 
+
 This would involve integrating multiple databases, 
-data cubes, or files (i.e., data integration). 
+data cubes, or files (i.e., DATA INTEGRATION). 
 
 Yet some attributes representing a given concept may have different names 
 in different databases, causing inconsistencies and redundancies. 
@@ -119,22 +115,19 @@ step when preparing data for a data warehouse. Additional data cleaning
 can be performed to detect and remove redundancies that may have 
 resulted from data integration. 
 
-you wonder, as you consider your data even further. 
-
-“The data set I have selected for analysis is HUGE, which is sure to slow down 
-the mining process. Is there a way I can reduce the size of my data set without
- jeopardizing the data mining results?”
 
 
 Data reduction obtains a reduced representation of the data set that is much 
 smaller in volume, yet produces the same (or almost the same) analytical 
 results. 
 
-Data reduction strategies include 
-1)dimensionality reduction and 
-2)numerosity reduction.
 
-In dimensionality reduction, data encoding schemes are applied so as to obtain 
+
+DATA REDUCTION strategies include 
+1) dimensionality reduction and 
+2) numerosity reduction.
+
+	1) In dimensionality reduction, data encoding schemes are applied so as to obtain 
 a reduced or “compressed” representation of the original data. Examples 
 include 
 
@@ -143,17 +136,12 @@ data compression techniques
 
 attribute subset selection 
 (e.g., removing irrelevant attributes),
-
 and 
-
 attribute construction 
 (e.g., where a small set of more useful attributes is derived from the original set). 
 
-
-In numerosity reduction, the data are replaced by alternative, smaller 
-representations using 
-parametric models 
-(e.g., regression or log-linear models) or 
+	2) In numerosity reduction, the data are replaced by alternative, smaller 
+representations using parametric models  (e.g., regression or log-linear models) or 
 
 nonparametric models 
 (e.g., histograms, clusters, sampling, or data aggregation). 
@@ -161,18 +149,13 @@ nonparametric models
 Data reduction is the topic of Section 3.4. 
 
 Getting back to your data, you have decided, say, that you would like to use a 
-distance based mining algorithm for your analysis, such as 
-neural networks, 
-nearest-neighbor classifiers, 
-or clustering. 
-
+distance based mining algorithm for your analysis, such as neural networks, 
+nearest-neighbor classifiers, or clustering. 
 
 Such methods provide better results if the data to be analyzed have been 
-normalized, that is, scaled to a smaller range 
-such as [0.0, 1.0]. 
+normalized, that is, scaled to a smaller range such as [0.0, 1.0]. 
 
 Your customer data, for example, contain the attributes age and annual salary.
- 
 The annual salary attribute usually takes much larger values than age. 
 
 Therefore, if the attributes are left unnormalized, the distance measurements 
@@ -180,7 +163,7 @@ taken on annual salary will generally
 outweigh distance measurements taken on age.
 
 Discretization and concept hierarchy 
-gen eration can also be useful, 
+generation can also be useful, 
 
 where raw data values for attributes are replaced by ranges or 
 higher conceptual levels. For example, raw values for age 
@@ -191,30 +174,29 @@ Discretization and concept hierarchy generation are powerful tools for data mini
 in that they allow data mining at multiple abstraction levels. 
 
 Normalization, data discretization, and concept hierarchy generation are forms of 
-data transformation. 
+DATA TRANSFORMATION
 
 You soon realize such data transformation operations are additional data 
-preprocessing procedures that would 
-contribute toward the success of the mining process. 
+preprocessing procedures that would contribute toward the success 
+of the mining process. Data integration and data discretization 
+are discussed in Sections 3.5. 
 
-Data integration and data discretization are discussed in Sections 3.5. 
 
-
-Figure 3.1 summarizes the data preprocessing steps described here. Note that 
-the previous categorization is not mutually exclusive. For example, the removal 
-of redundant data may be seen as a form of data cleaning, as well as data 
-reduction. 
+Figure 3.1 page no. 87 summarizes the data preprocessing steps described here. 
+Note that the previous categorization is not mutually exclusive. For example, 
+the removal of redundant data may be seen as a form of data cleaning, 
+as well as data reduction. 
 
 
 In summary, real-world data tend to be dirty, incomplete, and inconsistent. 
 Data preprocessing techniques can improve data quality, thereby helping 
 to improve the  accuracy and efficiency of the subsequent mining process. 
 
-
 Data preprocessing is an important step in the knowledge discovery process, because 
 quality decisions must be based on quality data. Detecting data anomalies, 
 rectifying them early, and reducing the data to be analyzed can lead to huge 
 payoffs for decision making.
 
+-------------------------------------------------------------------------------------------------------------------
 
-changes
+-------------------------------------------------------------------------------------------------------------------
